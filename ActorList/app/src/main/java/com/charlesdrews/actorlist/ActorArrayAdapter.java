@@ -32,8 +32,8 @@ public class ActorArrayAdapter extends ArrayAdapter<Actor> {
         Actor actor = mData.get(position);
 
         ((TextView) convertView.findViewById(R.id.nameText)).setText("Name: " + actor.getName());
-        ((TextView) convertView.findViewById(R.id.dobText)).setText("DOB: " + actor.getName());
-        ((TextView) convertView.findViewById(R.id.oscarText)).setText("Oscars won: " + actor.getName());
+        ((TextView) convertView.findViewById(R.id.dobText)).setText("DOB: " + actor.getDob());
+        ((TextView) convertView.findViewById(R.id.oscarText)).setText("Oscars won: " + actor.getOscarsWon());
 
         return convertView;
     }
