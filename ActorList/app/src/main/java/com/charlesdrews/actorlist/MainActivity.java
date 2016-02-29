@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.listView);
 
-        ArrayList<Actor> actors = new ArrayList<>();
-        actors.add(new Actor("Leonardo DiCaprio", "whenever", 1));
-        actors.add(new Actor("Matt Damon", "sometime", 1));
-        actors.add(new Actor("J-Law", "more recent", 1));
+        ArrayList<Actor> actorsArrayList = new ArrayList<>();
+        actorsArrayList.add(new Actor("Leonardo DiCaprio", "1974", 1));
+        actorsArrayList.add(new Actor("Matt Damon", "1970", 1));
+        actorsArrayList.add(new Actor("J-Law", "1990", 1));
 
-        ActorArrayAdapter adapter = new ActorArrayAdapter(this, R.layout.custom_layout, actors);
+        ActorArrayAdapter adapter = new ActorArrayAdapter(this, R.layout.custom_layout, actorsArrayList);
 
         listView.setAdapter(adapter);
     }
